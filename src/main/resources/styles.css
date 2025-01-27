@@ -31,7 +31,7 @@
     -fx-background-radius: 5px;
     -fx-font-size: 13px;
     -fx-background-color: #fff;
-    -fx-pref-width: 120px; /* Diminui o tamanho do ComboBox */
+     /* Diminui o tamanho do ComboBox */
 }
 
 /* Botões */
