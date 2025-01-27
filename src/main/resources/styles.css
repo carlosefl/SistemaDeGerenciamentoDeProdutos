@@ -1,0 +1,108 @@
+/* Estilo geral */
+.root {
+    -fx-font-family: "Arial";
+    -fx-background-color: #f4f4f9;
+}
+
+/* Labels */
+.label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+/* Caixa de entrada de texto */
+.text-field {
+
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-font-size: 14px;
+    -fx-background-color: #fff;
+}
+
+/* ComboBox (campo de status menor) */
+.combo-box {
+
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-font-size: 13px;
+    -fx-background-color: #fff;
+    -fx-pref-width: 120px; /* Diminui o tamanho do ComboBox */
+}
+
+/* Botões */
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 8px 16px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 4, 0, 0, 2);
+}
+
+.button:hover {
+    -fx-background-color: #45a049;
+}
+
+.button:pressed {
+    -fx-background-color: #3e8e41;
+    -fx-effect: none;
+}
+
+/* Botões dentro do HBox */
+.hbox > .button {
+    -fx-margin: 10px;
+}
+
+/* Tabela */
+.table-view {
+    -fx-border-color: #ddd;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-background-color: #ffffff;
+    -fx-alignment: center;
+}
+
+#customers {
+    -fx-font-family: Arial, Helvetica, sans-serif;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-color: transparent;
+}
+
+#customers .cell, #customers .column-header {
+    -fx-border-color: #ddd;
+    -fx-border-width: 0 0 1px 1px;
+    -fx-padding: 8px;
+
+/* Linhas da tabela */
+.table-row-cell {
+    -fx-padding: 10px;
+    -fx-font-size: 14px;
+    -fx-background-color: #ffffff; /* Fundo branco para as linhas */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #fff;
+    -fx-text-fill: white;
+}
+
+#customers .row:nth-child(even) {
+    -fx-background-color: #f2f2f2;
+}
+
+/* Espaçamento e organização */
+.hbox {
+    -fx-spacing: 10px;
+}
+
+.vbox {
+    -fx-spacing: 10px;
+    -fx-padding: 10px;
+}
